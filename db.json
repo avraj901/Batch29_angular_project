@@ -1,0 +1,24 @@
+{
+  "users": [
+    {
+      "firstName": "Ram",
+      "lastName": "kumar",
+      "age": 50,
+      "id": 1
+    },
+    {
+      "firstname": "avanish",
+      "lastname": "rajbhar",
+      "age": "10",
+      "gender": "Male",
+      "id": 2
+    },
+    {
+      "firstname": "chaman",
+      "lastname": "Tiwari",
+      "age": "28",
+      "gender": "Male",
+      "id": 3
+    }
+  ]
+}

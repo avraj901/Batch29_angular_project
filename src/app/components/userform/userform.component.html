@@ -1,0 +1,38 @@
+
+<span>{{title}}</span>
+
+<div class="row">
+    <div class="col">
+      <input type="text"  [(ngModel)] = user.firstname class="form-control" placeholder="First name" aria-label="First name">
+    </div>
+    <div class="col">
+      <input type="text" [(ngModel)] = user.lastname class="form-control" placeholder="Last name" aria-label="Last name">
+    </div>
+    <div class="col">
+        <input type="text"  [(ngModel)] = user.age class="form-control" placeholder="age" aria-label="Last name">
+      </div>
+      <h3>Select Gender </h3>
+      <div class="form-check">
+        <input class="form-check-input" [(ngModel)] = user.gender value="Male" type="radio" name="gender" id="male">
+        <label class="form-check-label" for="male">Male</label>
+      </div>
+      <div class="form-check">
+        <input class="form-check-input" [(ngModel)] = user.gender value="Female"  id="female" checked>
+        <label class="form-check-label" for="female">Female</label>
+      </div>
+  </div>
+<button type="button" class="btn btn-success" (click)="save()">Success</button>
+<ol class="list-group list-group-numbers">
+  <li *ngFor="let u of users ; index as i" class="list-group-item">
+    <span>{{u.firstname}}</span>
+    <br>
+    <span>{{u.lastname}}</span>
+    <br>
+    <span>{{u.age}}</span>
+    <br>
+    <span>{{u.gender}}</span>
+    <br>
+    <button type="button" (click) ="deleteRow(u,i)" style="margin-right: 500;" class="btn btn-danger">Delete</button>
+  </li>
+</ol>
+
